@@ -345,6 +345,12 @@ html{
     }
 }
 
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+}
+
 /* ***************** */
 /* MEDIA QUERY STYLE END */
 /* ***************** */
