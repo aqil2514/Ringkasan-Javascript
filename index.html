@@ -61,29 +61,99 @@
             <button class="prev-button" onclick="prevButton()">P</button>
             <!-- CONTENT START -->
             <div id="judul" class="content content-active">
-                <h1>01. Variabel dalam Javascript</h1>
+                <h1>1.1. Variabel dalam Javascript</h1>
                 <p>Variabel adalah keyword yang digunakan untuk menyimpan suatu data. Variabel dapat dideklarasi dengan 3 cara, yaitu:</p>
                 <ul>
-                    <li>var = Variabel 1995 s/d 2015 yang sering digunakan. Setelah itu, variabel yang sering digunakan adalah const dan let</li>
-                    <li>const = Variabel yang menyimpan data tetap, tidak berubah-ubah.</li>
-                    <li>let = Variabel yang datanya dapat berubah</li>
+                    <li><span class="p-blue">var </span> = Variabel 1995 s/d 2015 yang sering digunakan. Setelah itu, variabel yang sering digunakan adalah const dan let</li>
+                    <li><span class="p-blue"> const </span> = Variabel yang menyimpan data tetap, tidak berubah-ubah.</li>
+                    <li><span class="p-blue"> let</span> = Variabel yang datanya dapat berubah</li>
                 </ul><br>
                 <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">cek di sini</a></p>
             </div>
             <div id="judul" class="content content-disactive-right">
-                <h1>Judul Dua</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate eaque perspiciatis harum dolor! Quia impedit perspiciatis laudantium dolor reprehenderit!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure optio doloremque iusto dolorem. Doloribus animi quisquam totam quibusdam dolores.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vitae veritatis eligendi molestias dolores impedit qui! Esse nihil aspernatur consequuntur!</p>
-                <p>Lebih lengkap <a href="#">cek di sini</a></p>
+                <h1>1.2. Variabel Let</h1>
+                <p>variabel <span class="p-blue"> let</span> dikenalkan pada tahun 2015. Data yang dideklarasi dengan variabel ini tidak dapat dideklarasi kembali.</p>
+                <p>Data yang ingin digunakan, harus dideklarasikan dengan <span class="p-blue">let</span> terlebih dahulu.</p>
+                <p>Variabel <span class="p-blue">let</span> memiliki <span class="p-italic"> Block Scope</span> (Akan dijelaskan di slide selanjutnya)</p> <br>
+                <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_let.asp" target="_blank">cek di sini</a></p>
             </div>
             <div id="judul" class="content content-disactive-right">
-                <h1>Judul Tiga</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate eaque perspiciatis harum dolor! Quia impedit perspiciatis laudantium dolor reprehenderit!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure optio doloremque iusto dolorem. Doloribus animi quisquam totam quibusdam dolores.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vitae veritatis eligendi molestias dolores impedit qui! Esse nihil aspernatur consequuntur!</p>
-                <p>Lebih lengkap <a href="#">cek di sini</a></p>
+                <h1>1.3. Variabel Const</h1>
+                <p>Data yang dideklarasi dengan variabel <span class="p-blue">const</span> tidak dapat diubah-ubah.</p>
+                <p>Variabel <span class="p-blue">const</span> harus langsung diberikan value.</p>
+                <p>Gunakan variabel ini ketika ingin membuat Array, Object, Function, dan RegExp.</p> <br>
+                <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_const.asp" target="_blank">cek di sini</a></p>
             </div>
+            <div id="judul" class="content content-disactive-right">
+              <h1>2.1. Javascript Operators</h1>
+              <p>Javascript mengenal operator matematika seperti kabataku (Kali Bagi Tambah Kurang).</p>
+              <p>Ada beberapa tipe Javascript Operators, seperti Arithmetic Operators, Assignment Operators, Comparrison Operators, String Operators, Logical Operators, Bitwise Operators, Ternary Operators, dan Type Operators.</p>
+              <br>
+              <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_const.asp" target="_blank">cek di sini</a></p>
+          </div>
+          <div id="judul" class="content content-disactive-right">
+            <h1>2.2. Arithmetic Operators</h1>
+            <p>Di bawah ini adalah beberapa Arithmetic Operators:</p>
+            <ul>
+              <li>+ = Penambahan. Contoh (2+2)</li>
+              <li>- = Pengurangan. Contoh (3-2)</li>
+              <li>* = Pengalian. Contoh (3*2)</li>
+              <li>** = Pemangkatan. Contoh (5**2)</li>
+              <li>/ = Pembagian. Contoh (10/2)</li>
+              <li>++ = Penambahan 1 pada variabel. Contoh (<span class="p-blue"> let </span> i = 0; i++)</li>
+              <li>-- = Pengurangan 1 pada variabel. Contoh (<span class="p-blue">let</span> i = 10; i-- )</li>
+            </ul>
+            <br>
+            <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_const.asp" target="_blank">cek di sini</a></p>
+        </div>
+        <div id="judul" class="content content-disactive-right">
+          <h1>2.3. Assignment Operators</h1>
+          <p>Di bawah ini adalah beberapa Assignment Operators:</p>
+          <table style="width:100%;">
+            <tr>
+              <th>Operator</th>
+              <th>Contoh</th>
+              <th>Sama dengan</th>
+            </tr>
+            <tr>
+              <td>=</td>
+              <td>x = y</td>
+              <td>x = y</td>
+            </tr>
+            <tr>
+              <td>+=</td>
+              <td>x += y</td>
+              <td>x = x + y</td>
+            </tr>
+            <tr>
+              <td>-=</td>
+              <td>x -= y</td>
+              <td>x = x - y</td>
+            </tr>
+            <tr>
+              <td>*=</td>
+              <td>x *= y</td>
+              <td>x = x * y</td>
+            </tr>
+            <tr>
+              <td>/=</td>
+              <td>x /= y</td>
+              <td>x = x / y</td>
+            </tr>
+            <tr>
+              <td>%=</td>
+              <td>x %= y</td>
+              <td>x = x % y</td>
+            </tr>
+            <tr>
+              <td>**=</td>
+              <td>x **= y</td>
+              <td>x ** y</td>
+            </tr>
+          </table>
+          <br>
+          <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_const.asp" target="_blank">cek di sini</a></p>
+      </div>
             <!-- CONTENT END -->
             <button class="next-button" onclick="nextButton()">N</button>
             <div class="menu-study"></div>
