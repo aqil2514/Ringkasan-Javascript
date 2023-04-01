@@ -1,5 +1,8 @@
 const menu = document.getElementById('main');
 const materi = document.querySelectorAll('#judul');
+const menuNavbar = document.querySelector('.menu-navbar');
+const navbar = document.querySelector('.navbar');
+const nav = document.querySelector('.header');
 let currentSlide = 0;
 
 function toMenu(){
@@ -40,3 +43,15 @@ function prevButton(){
 
     return console.log(materiKini);
 }
+
+menuNavbar.addEventListener('click', function(){
+    menuNavbar.classList.toggle('menu-navbar-active');
+    navbar.classList.toggle('navbar-active');
+})
+
+document.addEventListener('click', function(e){
+    if(!navbar.contains(e.target) && !nav.contains(e.target)){
+        navbar.classList.remove('navbar-active');
+        menuNavbar.classList.remove('menu-navbar-active')
+    }
+})

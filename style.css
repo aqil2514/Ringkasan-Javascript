@@ -28,6 +28,10 @@ html{
   top: 0;
 }
 
+.menu-navbar{
+    display: none;
+}
+
 .logo-sub {
   text-align: center;
 }
@@ -290,4 +294,57 @@ html{
 
 /* ***************** */
 /* MENU STYLE END */
+/* ***************** */
+
+/* ***************** */
+/* MEDIA QUERY STYLE START */
+/* ***************** */
+
+@media (max-width: 768px){
+    *{
+        font-size: 75%;
+    }
+
+    .header .navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -1%;
+        top: 100%;
+        width: 20%;
+        height: 0;
+        text-align: center;
+        background-color: #123188;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .navbar-active{
+        height: 30vh !important;
+        border-left: 0.3rem solid #fbff13;
+        border-bottom: 0.3rem solid #fbff13;
+        padding: 2rem 1rem;
+    }
+
+    .menu-navbar{
+        display: block;
+        margin: 1rem;
+        padding: 0.5rem;
+        color: white;
+        transition: 0.3s;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .navbar a{
+        margin: 1rem 0;
+    }
+
+    .menu-navbar-active{
+        background-color: #031442;
+    }
+}
+
+/* ***************** */
+/* MEDIA QUERY STYLE END */
 /* ***************** */
