@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ringkasan Javascript</title>
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MY FAVICON -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+
+    <!-- MY ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="header">
+      <div class="logo-sub">
+        <h1 class="logo">Ringkasan <span>Javascript</span></h1>
+        <p class="sub-logo">Berdasarkan pembelajaran pribadi</p>
+      </div>
+      <div class="navbar">
+        <a href="#intro">Home</a>
+        <a href="#main">Menu</a>
+        <a href="#contact">Kontak</a>
+        <!-- <span class="material-symbols-outlined"> menu </span> -->
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- INTRO START -->
+    <section id="intro" class="intro">
+      <div class="welcome">
+        <h1 class="rangkuman">Rangkuman <span> Javascript</span></h1>
+      </div>
+      <button class="container-play" onclick="toMenu()">
+        <div class="animation-play"></div>
+        <span class="material-symbols-outlined"> play_arrow </span>
+      </button>
+    </section>
+    <!-- INTRO END -->
+
+    <!-- MAIN START -->
+    <section id="main" class="menu">
+        <h1>Rangkuman Javascript</h1>
+        <div class="container-study">
+            <button class="prev-button" onclick="prevButton()">P</button>
+            <!-- CONTENT START -->
+            <div id="judul" class="content content-active">
+                <h1>01. Variabel dalam Javascript</h1>
+                <p>Variabel adalah keyword yang digunakan untuk menyimpan suatu data. Variabel dapat dideklarasi dengan 3 cara, yaitu:</p>
+                <ul>
+                    <li>var = Variabel 1995 s/d 2015 yang sering digunakan. Setelah itu, variabel yang sering digunakan adalah const dan let</li>
+                    <li>const = Variabel yang menyimpan data tetap, tidak berubah-ubah.</li>
+                    <li>let = Variabel yang datanya dapat berubah</li>
+                </ul><br>
+                <p>Lebih lengkap <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">cek di sini</a></p>
+            </div>
+            <div id="judul" class="content content-disactive-right">
+                <h1>Judul Dua</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate eaque perspiciatis harum dolor! Quia impedit perspiciatis laudantium dolor reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure optio doloremque iusto dolorem. Doloribus animi quisquam totam quibusdam dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vitae veritatis eligendi molestias dolores impedit qui! Esse nihil aspernatur consequuntur!</p>
+                <p>Lebih lengkap <a href="#">cek di sini</a></p>
+            </div>
+            <div id="judul" class="content content-disactive-right">
+                <h1>Judul Tiga</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate eaque perspiciatis harum dolor! Quia impedit perspiciatis laudantium dolor reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure optio doloremque iusto dolorem. Doloribus animi quisquam totam quibusdam dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vitae veritatis eligendi molestias dolores impedit qui! Esse nihil aspernatur consequuntur!</p>
+                <p>Lebih lengkap <a href="#">cek di sini</a></p>
+            </div>
+            <!-- CONTENT END -->
+            <button class="next-button" onclick="nextButton()">N</button>
+            <div class="menu-study"></div>
+        </div>
+    </section>
+    <!-- MAIN END -->
+
+    <!-- CONTACT START -->
+    <section id="contact" class="contact"></section>
+    <!-- CONTACT END -->
+
+    <!-- MY SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
