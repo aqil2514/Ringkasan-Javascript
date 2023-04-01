@@ -295,7 +295,72 @@ html{
 /* ***************** */
 /* MENU STYLE END */
 /* ***************** */
+  
+/* ***************** */
+/* CONTACT STYLE START */
+/* ***************** */
 
+.about{
+    width: 100%;
+    height: 100vh;
+    max-width: 1160px;
+    background-color: #3e438b;
+    padding: 6rem 7% 1.5rem;
+    position: relative;
+  }
+  
+  .about h1{
+    text-align: center;
+    color: white;
+  }
+  
+  .about h1 span{
+    color: yellow;
+  }
+  
+  .our-contacts{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    width: 100%;
+  }
+  
+  .our-contacts-button{
+    margin: 0 auto;
+  }
+  
+  .our-contacts-button button{
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: transparent;
+    border: 0.3rem solid white;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .our-contacts-button button:hover{
+    color: black;
+    background-color: white;
+    border: none;
+  }
+  
+  .our-contacts-button button p{
+    text-align: center;
+  }
+
+  
+/* ***************** */
+/* CONTACT STYLE END */
+/* ***************** */
+  
 /* ***************** */
 /* MEDIA QUERY STYLE START */
 /* ***************** */
