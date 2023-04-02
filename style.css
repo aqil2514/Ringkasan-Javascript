@@ -202,7 +202,7 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
-    z-index: 10;
+    z-index: 1;
 }
 
 .container-study button:hover{
@@ -232,8 +232,47 @@ html{
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 0;
+    left: 0;
     background-color: #333;
-    border: 0.2rem solid yellow;
+    border-top: 1rem solid #e4e453;
+    border-radius: 1rem 1rem 0 0;
+    transition: 0.3s;
+    z-index: 2;
+    text-align: left;
+}
+
+.menu-study:hover{
+    height: 60%;
+    border-top-width: 0.3rem;
+}
+
+.menu-list{
+    display: inline-block;
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+    border: 0.3rem solid #fff;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.menu-list:hover{
+    background-color: #e4e453;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    width: 20%;
+    border-radius: 1rem;
+}
+
+.menu-list span, .menu-list p{
+    display: inline-block;
 }
 
 .content{
@@ -311,9 +350,11 @@ html{
   .about h1{
     text-align: center;
     color: white;
-  }
-  
-  .about h1 span{
+    font-size: 1.6rem;
+}
+
+.about h1 span{
+      font-size: 1.6rem;
     color: yellow;
   }
   

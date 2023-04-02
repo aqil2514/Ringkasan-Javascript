@@ -3,45 +3,55 @@ const materi = document.querySelectorAll('#judul');
 const menuNavbar = document.querySelector('.menu-navbar');
 const navbar = document.querySelector('.navbar');
 const nav = document.querySelector('.header');
+const menuList = document.querySelectorAll('.menu-list');
 let currentSlide = 0;
 
 function toMenu(){
     document.documentElement.scrollTo(0, 657);
 }
 
-function nextButton(){
-    let materiKini = materi[currentSlide];
-    let nextMateri = materi[currentSlide+1];   
+function nextButton(materiKini, nextMateri){
+    materiKini = materi[currentSlide];
+    if(nextMateri == undefined){
+        nextMateri = 1;
+    }
+
+    let nextLesson = materi[currentSlide + nextMateri];
 
     if(currentSlide == materi.length-1){
         alert('Belum diupdate');
         return;
     }else{
+        console.log(`Materi Kini : ${materiKini}`);
+        console.log(`Next Materi : ${nextMateri}`);
         materiKini.classList.add('content-disactive-left');
         materiKini.classList.remove('content-active');
-        currentSlide += 1;
-        nextMateri.classList.add('content-active');
-        nextMateri.classList.remove('content-disactive-right');
+        currentSlide += nextMateri;
+        nextLesson.classList.add('content-active');
+        nextLesson.classList.remove('content-disactive-right');
+        nextLesson.classList.remove('content-disactive-left');
     }
-    return console.log(nextMateri);
 }
 
-function prevButton(){
-    let materiKini = materi[currentSlide];
-    let prevMateri = materi[currentSlide-1];
+function prevButton(materiKini, prevMateri){
+    materiKini = materi[currentSlide];
+    if(prevMateri == undefined){
+        prevMateri = 1;
+    }
+
+    let prevLesson = materi [currentSlide - prevMateri]
 
     if(currentSlide == 0){
         alert('Ini adalah slide pertama');
         return;
     }else{
         materiKini.classList.remove('content-active');
-        currentSlide -= 1;
         materiKini.classList.add('content-disactive-right');
-        prevMateri.classList.add('content-active');
-        prevMateri.classList.remove('content-disactive-left');
+        currentSlide -= prevMateri;
+        prevLesson.classList.add('content-active');
+        prevLesson.classList.remove('content-disactive-left');
+        prevLesson.classList.remove('content-disactive-right');
     }
-
-    return console.log(materiKini);
 }
 
 menuNavbar.addEventListener('click', function(){
@@ -55,3 +65,31 @@ document.addEventListener('click', function(e){
         menuNavbar.classList.remove('menu-navbar-active')
     }
 })
+
+for(let i = 0; i < menuList.length; i++){
+    menuList[i].addEventListener('click', function(){
+        if(i == 1){//Operations Javascript Menu List
+            let operation = 3;
+            if(operation <= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-right');
+                materi[currentSlide].classList.remove('content-active');
+            } else if( operation >= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-left');
+                materi[currentSlide].classList.remove('content-active');
+            }
+            currentSlide = 0;
+            nextButton(currentSlide, operation);
+        } else if(i == 0){ //Variables Javascript Menu List
+            let variables = 0;
+            if(variables <= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-right');
+                materi[currentSlide].classList.remove('content-active');
+            } else if( variables >= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-left');
+                materi[currentSlide].classList.remove('content-active');
+            }
+            currentSlide = 0;
+            nextButton(currentSlide, variables);
+        }
+    })
+}
