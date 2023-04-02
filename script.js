@@ -6,6 +6,16 @@ const nav = document.querySelector('.header');
 const menuList = document.querySelectorAll('.menu-list');
 let currentSlide = 0;
 
+document.onkeydown = checkKey;
+
+function checkKey(e){
+    if(e.keyCode == '39'){ // Kode right arrow
+        nextButton();
+    }else if(e.keyCode == '37'){// Kode left arrow
+        prevButton();
+    }
+}
+
 function toMenu(){
     document.documentElement.scrollTo(0, 657);
 }
