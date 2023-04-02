@@ -22,8 +22,6 @@ function nextButton(materiKini, nextMateri){
         alert('Belum diupdate');
         return;
     }else{
-        console.log(`Materi Kini : ${materiKini}`);
-        console.log(`Next Materi : ${nextMateri}`);
         materiKini.classList.add('content-disactive-left');
         materiKini.classList.remove('content-active');
         currentSlide += nextMateri;
@@ -90,6 +88,17 @@ for(let i = 0; i < menuList.length; i++){
             }
             currentSlide = 0;
             nextButton(currentSlide, variables);
+        }else if(i == 2){ //Tipe Data Javascript Menu List
+            let tipeData = 8;
+            if(tipeData <= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-right');
+                materi[currentSlide].classList.remove('content-active');
+            } else if( tipeData >= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-left');
+                materi[currentSlide].classList.remove('content-active');
+            }
+            currentSlide = 0;
+            nextButton(currentSlide, tipeData);
         }
     })
 }
