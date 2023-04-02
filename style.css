@@ -290,25 +290,34 @@ html{
 
 .content .p-blue{
     color: blue;
-    font-weight: bold;
     font-style: italic;
 }
 
 .content .p-green{
     color: green;
-    font-weight: bold;
     font-style: italic;
 }
 
 .content .p-brown{
     color: brown;
-    font-weight: bold;
+    font-style: italic;
+}
+
+.content .p-red{
+    color: red;
     font-style: italic;
 }
 
 .content .p-italic{
     font-style: italic;
     font-weight: bold;
+}
+
+.container-in-content{
+    background-color: burlywood;
+    border: 0.3rem ridge black;
+    border-radius: 1rem;
+    padding:0.51rem;
 }
 
 .content .drop-list li{

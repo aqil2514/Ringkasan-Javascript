@@ -99,6 +99,17 @@ for(let i = 0; i < menuList.length; i++){
             }
             currentSlide = 0;
             nextButton(currentSlide, tipeData);
+        }else if(i == 3){ //Function Javascript Menu List
+            let functions = 19;
+            if(functions <= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-right');
+                materi[currentSlide].classList.remove('content-active');
+            } else if( functions >= currentSlide){
+                materi[currentSlide].classList.add('content-disactive-left');
+                materi[currentSlide].classList.remove('content-active');
+            }
+            currentSlide = 0;
+            nextButton(currentSlide, functions);
         }
     })
 }
